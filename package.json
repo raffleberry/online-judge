@@ -1,0 +1,22 @@
+{
+  "name": "online-judge",
+  "version": "1.0.0",
+  "description": "A nodeJS implementation of online-judge.",
+  "main": "judge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raffleberry/online-judge.git"
+  },
+  "author": "Debadutta Padhial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raffleberry/online-judge/issues"
+  },
+  "homepage": "https://github.com/raffleberry/online-judge#readme",
+  "dependencies": {
+    "unique-filename": "^1.1.1"
+  }
+}
