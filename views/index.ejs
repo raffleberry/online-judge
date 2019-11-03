@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" con10t="IE=edge,chrome=1">
+  <title>Editor</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="row full-screen center-block">
+    <div class="col col-sm-8 col-md-8 col-lg-8">
+      <div id="editor">//insert your code here!</div>
+    </div>
+
+    <div class="col col-sm-4 col-md-4 col-lg-4">
+
+      <div class="row height-fifty margin-left-10">
+        <div class="col" style="height: 100%;">
+          <div class="row" style="height: 90%;">
+            <textarea class="form-control disable-resize" id="prog-input"></textarea>
+          </div>
+          <div class="row margin-top-2 margin-bottom-2  text-center" style="justify-content: center; height: 8%;">STDIN
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div style="padding-top: 5%;"></div>
+      </div>
+
+      <div class="row height-fifty margin-left-10">
+        <div class="col" style="height: 100%;">
+          <div class="row" style="height: 90%;">
+            <textarea class="form-control disable-resize" id="prog-output" readonly></textarea>
+          </div>
+          <div class="row margin-top-2 margin-bottom-2 text-center" style="justify-content: center; height: 8%;"><span
+              id="response">STDOUT</span></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div style="padding-top: 5%;"></div>
+      </div>
+
+      <div class="row margin-left-10">
+        <button class="btn yellow btn-primary" id="execute" style="margin: 0 auto">compile and run</button>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="ace/src/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/default.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

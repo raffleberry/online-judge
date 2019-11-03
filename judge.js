@@ -69,11 +69,12 @@ function judge(program, inputData) {
               clearTimeout(ok);
             }
           });
-          run.stderr.on('data', function (data) {
-            if (!(Rstderr.length === 0))
-              resolve([Rstdout, Rstderr]);
-              clearTimeout(ok);
-          });
+          
+          // run.stderr.on('data', function (data) {
+          //   if (!(Rstderr.length === 0))
+          //     resolve([Rstdout, Rstderr]);
+          //     clearTimeout(ok);
+          // });
           
           //delete the executable file
           fs.access('./tmp/' + filename + '.out', function (err) {
@@ -101,17 +102,19 @@ function judge(program, inputData) {
     });
 }
 
-testCode = '#include <iostream>\nusing namespace std;int main(){string x;cin>>x;cout<<x<<endl;cout<<"hello World"<<endl;return 0;}';
-testInput = 'helloworld';
+//test code below
+
+// testCode = '#include <iostream>\nusing namespace std;int main(){cerr << "SHIT" << endl; string x;cin>>x;cout<<x<<endl;cout<<"hello World"<<endl;return 0;}';
+// testInput = 'helloworld';
 
 
-judge(testCode, testInput)
-  .then(
-    function (response) {
-      console.log(response);
-    })
-  .catch(function(data) {
-    console.log(data);
-  });
+// judge(testCode, testInput)
+//   .then(
+//     function (response) {
+//       console.log(response);
+//     })
+//   .catch(function(data) {
+//     console.log(data);
+//   });
 
 module.exports = { judge };

@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  user-select: none;
+  background-color:silver;
+}
+.full-screen {
+  padding: 1% 1% 1% 1%;
+  margin: auto;
+  height: 100%;
+  width: 90%;
+}
+.height-fifty {
+  height: 40%;
+}
+
+.disable-resize {
+  resize: none;
+  width: 100%;
+}
+
+.trim-sides {
+  margin: 0 0 0 0;
+  border: none;
+}
+
+.margin-left-2 {
+  margin-left: 2%;
+}
+
+.margin-right-2 {
+  margin-right: 2%;
+}
+
+.margin-top-2 {
+  margin-top: 2%;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2%;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5%;
+}
+
+.margin-top-10 {
+  margin-top: 10%;
+}
+
+.margin-right-10 {
+  margin-right: 10%;
+}
+
+.margin-left-10 {
+  margin-left: 10%;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10%;
+}
+
+#editor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
